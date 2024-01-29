@@ -1,8 +1,8 @@
 node_modules
-out
+
 .idea
 .vscode
-.out/*
+out/*
 !out/.gitkeep
 templates/*
 !templates/.gitkeep

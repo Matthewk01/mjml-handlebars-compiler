@@ -1,6 +1,6 @@
 # MJML + Handlebars compiler tool
 
-- This tool compiles MJML templates with Handlebars data.
+- This tool compiles MJML templates with Handlebars data and outputs HTML files
 - Supports multiple templates and multiple data files
 - Supports hot reload
 - TODO: Better custom helpers support

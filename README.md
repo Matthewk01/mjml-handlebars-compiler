@@ -8,6 +8,10 @@
 ## Usage
 
 - `npm install`
-- put your templates in `templates` folder in following format: `templateName.mjml` + `templateName.json`
-- Example: `welcome.mjml` + `welcome.json`
+- Put your templates with data in `templates` folder in following format:
+```
+TEMPLATE_NAME.mjml
+TEMPLATE_NAME.json
+```
+- Example: `templates/welcome.mjml`, `templates/welcome.json`
 - `npm run start:dev`

@@ -1,0 +1,6 @@
+{
+  "watch": ["src", "templates"],
+  "ext": ".ts,.js, .json, .mjml",
+  "ignore": [],
+  "exec": "npx ts-node --esm ./src/index.ts"
+}

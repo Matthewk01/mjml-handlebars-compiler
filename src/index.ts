@@ -67,17 +67,6 @@ const compileHandlebars = async (templatePaths: string[]) => {
   return mjmlWithoutHendlebars;
 };
 
-compileHandlebars(getUniqueTemplatePathsWithoutExtensions()).then(
-  (mjmlBlobs) => {
-    mjmlBlobs.forEach((mjmlBlob, index) => {
-      const [templatePath, templateCompiled] = mjmlBlob;
-      const { html } = mjml2html(templateCompiled);
-      const fileName = templatePath.split("/").pop();
-      fs.writeFileSync(`${OUTPUT_DIR}/${fileName}.html`, html, "utf8");
-    });
-  },
-);
-
 const main = () => {
   const templates = getUniqueTemplatePathsWithoutExtensions();
   compileHandlebars(templates).then((mjmlBlobs) => {
